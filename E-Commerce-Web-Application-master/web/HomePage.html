@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Enter description one.">
+        <meta name="description" content="Enter description two.">
+        <!--<link rel="stylesheet" href="css/style.css">-->
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins';
+                text-decoration: none;
+                user-select: none;
+            }
+            header{
+                width: 100%;
+                height: 100vh;
+                /*                background: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(bg1.png);*/
+                background: #111;
+            }
+            nav{
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border: 10px;
+                background: #fff;
+            }
+            .Uprofile a{
+                margin: 0 10px;
+                padding: 10px 25px;
+                text-decoration: none;
+                background-color: #222;
+                color: #fff;
+                font-size: 1rem;
+                border-radius: 3px;
+                transition: all 0.3s linear;
+            }
+            .Uprofile a.logout{
+                background-color: #5800FF;
+            }
+            nav h1 a{
+                text-decoration: none;
+                color: #222;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            nav ul li {
+                display: inline-block;
+            }
+            nav ul li a{
+                margin: 0 5px;
+                padding: 10px 25px;
+                text-decoration: none;
+                color: #222;
+                font-size: 1rem;
+                border-radius: 3px;
+                transition: all 0.3s linear;
+            }
+            nav ul li a.active{
+                background-color: #111;
+                color: #fff;
+            }
+            nav ul li a:hover{
+                background-color: #111;
+                color: #fff;
+            }
+            .heading h1{
+                width: 100%;
+                overflow: hidden;
+                font-size: 8rem;
+                color: #111;
+                text-shadow: 0 0 aliceblue;
+                letter-spacing: 3px;
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 100px;
+                border: none;
+            }
+            .catagories th.th1{
+                padding: 20px;
+                color: #5800FF;    
+                font-size: 2rem;
+                margin: auto;
+            }
+            .catagories th.th2{
+                margin: 20px 0;
+            }
+            .catagories th.th2 a{
+                padding: 8px 20px;
+                background-color: #5800FF;
+                color: #fff;
+                border-radius: 100px;
+            }
+            .catagories table .bb{
+                border-bottom: none !important;
+            }
+            table {
+                width: 50%;
+                height: auto;
+                margin: 20px 0 50px 0px;
+                padding: 30px;
+                border-radius: 10px;
+                /*border: 1px solid #333;*/
+                /*box-shadow: 0 0 10px #222;*/
+                background: #fff;
+                /*                background: rgba( 0, 0, 0, 0.5 );
+                                box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+                                backdrop-filter: blur( 4px );
+                                -webkit-backdrop-filter: blur( 4px );
+                                border-radius: 10px;
+                                border: 1px solid rgba( 255, 255, 255, 0.1 );*/
+            }
+            table tr{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 15px;
+                border-bottom: 1px solid #444;
+            }
+            table tr td a{
+                color: #222;
+                letter-spacing: 2px;
+                font-size: 20px;
+
+            }
+            header .footer {
+                width: 100%;
+                height: 8vh;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .footer .f1{
+                display: inline-grid;
+                justify-content: center;
+                align-items: center;
+                letter-spacing: 1px;
+            }
+            .footer .f1 a{
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div class="nav">
+                    <h1><a href="#">Java E-Commerce</a></h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="HomePage.html" class="active">Home</a></li>
+                        <li><a href="listProduct_User.jsp">Products</a></li>
+                        <li><a href="MyOrders.jsp">My Orders</a></li>
+                        <li><a href="MainCart.jsp">My Cart</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contat Us</a></li>
+                    </ul>
+                </div>
+                <div class="Uprofile">
+                    <a href="ProfilePage.jsp">My Profile</a>
+                    <a href="index.html" class="logout">Logout</a>
+                </div>
+            </nav>
+            <center>
+                <div class="heading"> <h1> "FIND YOUR BEST CHOICES" </h1></div>
+
+                <div class="catagories">
+                    <table>
+                        <thead>
+                        <th colspan="2" class="th1">OUR CATEGORIES</th>
+                        </thead>
+                        <tr>
+                            <td><a href="#">ELECTRONICS</a></td>
+                            <td><a href="#">MEN/WOMEN WEARS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">HOME APPLIANCES</a></td>
+                            <td><a href="#">MOBILE ACCESSORIES</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">FOOT WEAR</a></td>
+                            <td><a href="#">CROCKERY</a></td>
+                        </tr>
+                        <tr class="bb">
+                            <th colspan="2" class="th2"><a
+                                    href="listProduct_User.jsp">BROWSE PRODUCTS</a></th>
+                            <th colspan="2" class="th2"><a
+                                    href="listProduct_User.jsp">SEARCH PRODUCT</a></th>
+                        </tr>
+                    </table>
+                </div>
+            </center>
+        </header>
+    </body>
+</html>

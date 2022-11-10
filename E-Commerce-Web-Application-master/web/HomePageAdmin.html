@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Administration Home Page</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins';
+                text-decoration: none;
+                user-select: none;
+            }
+            header{
+                width: 100%;
+                height: 100vh;
+                background: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(bg1.png);
+            }
+            nav{
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border: 10px;
+                background: #fff;
+            }
+            .Uprofile a{
+                margin: 0 10px;
+                padding: 10px 25px;
+                text-decoration: none;
+                background-color: #222;
+                color: #fff;
+                font-size: 1rem;
+                border-radius: 3px;
+                transition: all 0.3s linear;
+            }
+            .Uprofile a.logout{
+                background-color: #5800FF;
+            }
+            nav h1 a{
+                text-decoration: none;
+                color: #222;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            nav ul li {
+                display: inline-block;
+            }
+            nav ul li a{
+                margin: 0 5px;
+                padding: 10px 25px;
+                text-decoration: none;
+                color: #222;
+                font-size: 1rem;
+                border-radius: 3px;
+                transition: all 0.3s linear;
+            }
+            nav ul li a.active{
+                background-color: #111;
+                color: #fff;
+            }
+            nav ul li a:hover{
+                background-color: #111;
+                color: #fff;
+            }
+            .catagories th.th1{
+                padding: 20px;
+                color: #5800FF;    
+                font-size: 2rem;
+                margin: auto;
+            }
+            .catagories th.th2{
+                margin: 20px 0;
+            }
+            .catagories th.th2 a{
+                padding: 8px 20px;
+                background-color: #5800FF;
+                color: #fff;
+                border-radius: 100px;
+            }
+            .catagories table .bb{
+                border-bottom: none !important;
+            }
+            table {
+                width: 50%;
+                height: auto;
+                margin: 100px ;
+                padding: 30px;
+                border-radius: 10px;
+                border: 1px solid #333;
+                box-shadow: 0 0 10px #222;
+                background: #fff;
+                color: #222;
+
+            }
+            table tr{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 15px;
+                border-bottom: 1px solid #444;
+            }
+            table tr td a{
+                color: #222;
+                letter-spacing: 2px;
+                font-size: 20px;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav">
+                    <h1><a href="#">Java E-Commerce</a></h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="HomePageAdmin.html" class="active">Home</a></li>
+                        <li><a href="listCategory.jsp">Categories</a></li>
+                        <li><a href="listProducts.jsp">Products</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="listUsers.jsp">Users</a></li>
+                        <li><a href="#">Offers & Discount</a></li>
+                    </ul>
+                </div>
+                <div class="Uprofile">
+                    <a href="index.html" class="logout">Logout</a>
+                </div>
+            </nav>
+            <center>
+                <div class="catagories">
+                    <table>
+                        <thead>
+                        <th colspan="2" class="th1">OUR PRIME CATEGORIES</th>
+                        </thead>
+                        <tr>
+                            <td><a href="electronicsPage.jsp">ELECTRONICS</a></td>
+                            <td><a href="wears.jsp">MEN/WOMEN WEARS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="HomeApp.jsp">HOME APPLIANCES</a></td>
+                            <td><a href="mobileass.jsp">MOBILE ACCESSORIES</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="foot.jsp">FOOT WEAR</a></td>
+                            <td><a href="crockery.jsp">CROCKERY</a></td>
+                        </tr>
+                        <tr class="bb">
+                            <th colspan="2" class="th2"><a
+                                    href="AddPro.jsp">ADD NEW PRODUCT</a></th>
+                            <th colspan="2" class="th2"><a
+                                    href="addCat.html">ADD NEW CATEGORY</a></th>
+                        </tr>
+                    </table>
+                </div>
+            </center>       
+        </header>
+    </body>
+</html>
